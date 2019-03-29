@@ -33,7 +33,7 @@ class Initiate(LoginRunner):
         self.driver.get('https://accounts.google.com/signin/oauth/identifier?client_id=366682898353-acmb37ig2gpqnve85r8l5j922e0k496n.apps.googleusercontent.com&as=WGIYSyDYkypTgilavRKIRw&destination=https%3A%2F%2Fhamropatro.firebaseapp.com&approval_state=!ChQ2TjNoS2xFVkVnRHRhRUtwS01ZZBIfVXh5MnA3WFUya0lkOEhuU1JuY2dubXAtSm96c214WQ%E2%88%99AJDr988AAAAAXJyntUXA08t6U3fTbnucRZFXxA5AiuAf&oauthgdpr=1&xsrfsig=ChkAeAh8T06_P0dG9Z-OimVt6kcUisFwTOEREg5hcHByb3ZhbF9zdGF0ZRILZGVzdGluYXRpb24SBXNvYWN1Eg9vYXV0aHJpc2t5c2NvcGU&flowName=GeneralOAuthFlow')
         time.sleep(5)
         google_email = self.driver.find_element_by_id("identifierId")
-        google_email.send_keys("ekaiapaudyal@gmail.com")
+        google_email.send_keys("something@gmail.com")
         google_email.send_keys(Keys.RETURN)
         time.sleep(3)
         google_password = self.driver.find_element_by_name('password')
