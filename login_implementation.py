@@ -37,7 +37,7 @@ class Initiate(LoginRunner):
         google_email.send_keys(Keys.RETURN)
         time.sleep(3)
         google_password = self.driver.find_element_by_name('password')
-        google_password.send_keys("hMmXq4mzTv6BuuQ")
+        google_password.send_keys("password")
         google_password.send_keys(Keys.RETURN)
         time.sleep(3)
         self.driver.switch_to.window(window_before)
